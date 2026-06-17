@@ -26,7 +26,7 @@ Fecha de Registro: 16 de junio de 2026
 
 Pie de página (El rol correcto):
 
-Entidades Responsables: Secretaría de Planeación de Villamaría / Aquamaná S.A. E.S.P.
+Entidades Responsables: Alcaldia de Villamaría / Más Progreso S.A.S E.S.P / Espacios & Gestion Verde S.A.S
 
 Consultoría Tecnológica: Servicio de trazabilidad implementado por GM Holding. (En letra pequeña, al final).
 
