@@ -1,0 +1,41 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "convert": "node scripts/convert_xlsx.js",
+    "notarize": "node scripts/notarize.js",
+    "compile:contract": "node scripts/compile.js",
+    "deploy:contract": "node scripts/deploy.js",
+    "process:inventory": "node scripts/process_inventario.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "leaflet": "^1.9.4",
+    "next": "16.2.9",
+    "proj4": "^2.20.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "solc": "^0.8.20",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^20",
+    "@types/proj4": "^2.5.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "hardhat": "^3.9.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

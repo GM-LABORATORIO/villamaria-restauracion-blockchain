@@ -1,0 +1,10 @@
+{
+  "contractName": "VillamariaTrazabilidad",
+  "address": "0x7e34e2e66838D0DA8e88cBC4200020a6bD9925F4",
+  "txHash": "0x1c4586011963c5706d6b3086f4f8e931ff94b705281cadf3a2e0c953a6acb607",
+  "network": "Avalanche C-Chain Mainnet",
+  "chainId": 43114,
+  "deployedAt": "2026-06-17T00:19:55.973Z",
+  "explorer": "https://snowtrace.io/address/0x7e34e2e66838D0DA8e88cBC4200020a6bD9925F4",
+  "snowtrace": "https://snowtrace.io/address/0x7e34e2e66838D0DA8e88cBC4200020a6bD9925F4#code"
+}

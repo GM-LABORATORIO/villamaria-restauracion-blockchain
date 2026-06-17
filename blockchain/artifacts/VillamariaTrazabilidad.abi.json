@@ -1,0 +1,488 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "hashSHA256",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "nota",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "autor",
+        "type": "address"
+      }
+    ],
+    "name": "AnotacionAgregada",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "nombreArchivo",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "descripcion",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "hashSHA256",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "cid",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "enlaceIPFS",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "registradoPor",
+        "type": "address"
+      }
+    ],
+    "name": "DocumentoRegistrado",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "hashSHA256",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum VillamariaTrazabilidad.EstadoDocumento",
+        "name": "estadoAnterior",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum VillamariaTrazabilidad.EstadoDocumento",
+        "name": "estadoNuevo",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "EstadoActualizado",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DESARROLLADOR_BLOCKCHAIN",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FECHA_INICIO",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MUNICIPIO",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PARTICIPANTE_1",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PARTICIPANTE_2",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PARTICIPANTE_3",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROYECTO",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOTAL_INDIVIDUOS",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOTAL_LOTES",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_hashSHA256",
+        "type": "string"
+      },
+      {
+        "internalType": "enum VillamariaTrazabilidad.EstadoDocumento",
+        "name": "_nuevoEstado",
+        "type": "uint8"
+      }
+    ],
+    "name": "actualizarEstado",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_hashSHA256",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_nota",
+        "type": "string"
+      }
+    ],
+    "name": "agregarAnotacion",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_hashSHA256",
+        "type": "string"
+      }
+    ],
+    "name": "consultarAnotaciones",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "notas",
+        "type": "string[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "autores",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "timestamps",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_hashSHA256",
+        "type": "string"
+      }
+    ],
+    "name": "consultarDocumento",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "nombreArchivo",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "descripcion",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "hashSHA256",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "enlaceIPFS",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "cid",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "estado",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_hashSHA256",
+        "type": "string"
+      }
+    ],
+    "name": "estaRegistrado",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "infoProyecto",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "proyecto",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "municipio",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "participante1",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "participante2",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "participante3",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "totalIndividuos",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "totalLotes",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "desarrolladorBlockchain",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "obtenerTodosLosHashes",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "propietario",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_nombreArchivo",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_descripcion",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_hashSHA256",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_enlaceIPFS",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_cid",
+        "type": "string"
+      }
+    ],
+    "name": "registrarDocumento",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalDocumentos",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "fileName": "Vértices_de_los_Polígonos_Albania.xlsx",
+    "description": "Coordenadas WGS84 de los 8 lotes de restauración ecológica",
+    "cid": "bafkreid3hjg6tjrhsrpmmvyntqjbgzlepxzjuwshzzybhuurz42ase5hnq",
+    "sha256Hash": "ca600e8230e6bdba169609d40e393218bfec6cc69f10e67630de29b595837aff",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafkreid3hjg6tjrhsrpmmvyntqjbgzlepxzjuwshzzybhuurz42ase5hnq",
+    "txHash": "0x2a56aed5d5fbf2f2d4c8aaee5ce2f4a5f46b05c577968a1c96b85bc9375519e0",
+    "explorerUrl": "https://snowtrace.io/tx/0x2a56aed5d5fbf2f2d4c8aaee5ce2f4a5f46b05c577968a1c96b85bc9375519e0",
+    "timestamp": 1781655669,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Localizacion_Individuos_Totales_y_Muestreo.xls",
+    "description": "Inventario completo de 10,900 individuos forestales por lote",
+    "cid": "bafybeiceqse3kdc7422cybmduhrzpxx7drmygr6eakqpjvzhg5xpaauqxm",
+    "sha256Hash": "447c41faece2312a69a131b750de57a5347fe26af56ee4f615c836a449e56795",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafybeiceqse3kdc7422cybmduhrzpxx7drmygr6eakqpjvzhg5xpaauqxm",
+    "txHash": "0x3b6d40250c830f001fccd6f4724f406a059823413a86e4e1c7c0bc6cf760a77b",
+    "explorerUrl": "https://snowtrace.io/tx/0x3b6d40250c830f001fccd6f4724f406a059823413a86e4e1c7c0bc6cf760a77b",
+    "timestamp": 1781655682,
+    "isSimulated": false
+  },
+  {
+    "fileName": "INFORME_FINAL_GEOREFERENCIACION.pdf",
+    "description": "Informe final de georeferenciación del área intervenida SGR-SC-001-2025",
+    "cid": "bafybeidcfcsyv5xiopbqzaq6hpobjlduj4m6jjnspdhuil3fiytjtxlg3y",
+    "sha256Hash": "e4634963d83f3b30068f733259e735176bf3f3d34f237cd763be938f013bc8fc",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafybeidcfcsyv5xiopbqzaq6hpobjlduj4m6jjnspdhuil3fiytjtxlg3y",
+    "txHash": "0x0d38beff2f7b162bdf410693005075f36d4778b05f38b061db27df32fb166cd9",
+    "explorerUrl": "https://snowtrace.io/tx/0x0d38beff2f7b162bdf410693005075f36d4778b05f38b061db27df32fb166cd9",
+    "timestamp": 1781655693,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Individuos_Totales.jpg",
+    "description": "Mapa satelital de individuos totales plantados en los 8 lotes",
+    "cid": "bafybeibvr2j7eu2p6fzjuweh2ajfyt5o7r2ytehk724isu7tuysc7ad2uu",
+    "sha256Hash": "2114f67df9775084dbbc70e1a6d5cb7f26dd577596aaa3344226e428dd462f58",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafybeibvr2j7eu2p6fzjuweh2ajfyt5o7r2ytehk724isu7tuysc7ad2uu",
+    "txHash": "0xfeb951f60008841d91a4ffd07b66910ed763c45d88ca5f2dae2e01a365da6cdc",
+    "explorerUrl": "https://snowtrace.io/tx/0xfeb951f60008841d91a4ffd07b66910ed763c45d88ca5f2dae2e01a365da6cdc",
+    "timestamp": 1781655702,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Individuos_Totales_y_muestreo.jpg",
+    "description": "Mapa con inventario total y muestreo de campo superpuestos",
+    "cid": "bafybeibj3qpvqhkzefp3rfiurtkup4u25tjj2wkuxmfbmx5v4uzq6i3n3i",
+    "sha256Hash": "651c7106bee2278dd8ddc47fe3b4f56193e9b6fdb216248bad7b6382bb7fd09a",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafybeibj3qpvqhkzefp3rfiurtkup4u25tjj2wkuxmfbmx5v4uzq6i3n3i",
+    "txHash": "0x0413c7db684b88c82a86327850fc0a821b7dc30001efc45abf42bf63b245831e",
+    "explorerUrl": "https://snowtrace.io/tx/0x0413c7db684b88c82a86327850fc0a821b7dc30001efc45abf42bf63b245831e",
+    "timestamp": 1781655710,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Individuos_Totales_y_muestreo_sin_IS.jpg",
+    "description": "Mapa de inventario total y muestreo sin imagen satelital de fondo",
+    "cid": "bafybeihb42wfvotvfx55vm4dtyif3go3lkiwaw3akdd5fjppoasxv4ab5q",
+    "sha256Hash": "ef0ee056911f2aa6b63bbe961bfa0edf8e405140ec4b0bdf54689e46b9438bfe",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafybeihb42wfvotvfx55vm4dtyif3go3lkiwaw3akdd5fjppoasxv4ab5q",
+    "txHash": "0x5701f9b7bb4f3d3543d02fd7223ea49398f72a79d37d3a185424004a58beb9fe",
+    "explorerUrl": "https://snowtrace.io/tx/0x5701f9b7bb4f3d3543d02fd7223ea49398f72a79d37d3a185424004a58beb9fe",
+    "timestamp": 1781655717,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Individuos_muestreo.jpg",
+    "description": "Cartografía del área de muestreo forestal del proyecto",
+    "cid": "bafybeicayovwcmzzk4ohyybphh4n4onpz6yjssdeip3e76phe6g5v46jva",
+    "sha256Hash": "ba40307bba80f4c13cbd21b486bff0f77c1d00bdc22e0ef1de9d08286b0da606",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafybeicayovwcmzzk4ohyybphh4n4onpz6yjssdeip3e76phe6g5v46jva",
+    "txHash": "0x6a84d18c25b6cd3c7a0845788720ffdd3d5347725121a094fe570519e6bdfce0",
+    "explorerUrl": "https://snowtrace.io/tx/0x6a84d18c25b6cd3c7a0845788720ffdd3d5347725121a094fe570519e6bdfce0",
+    "timestamp": 1781655728,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Copia_de_base_669_Muestreo_arboles.xlsx",
+    "description": "Base de datos del muestreo estadístico de árboles (669 registros)",
+    "cid": "bafkreicnf2zeloriicwao4uztij4zyqturyko7bhbnhoyzvfja3hkvc6nq",
+    "sha256Hash": "a86c61c70f8f02c8cf4cda7173ba870f5c80211e01feec6b9df52e5d509bc0ce",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafkreicnf2zeloriicwao4uztij4zyqturyko7bhbnhoyzvfja3hkvc6nq",
+    "txHash": "0x3d405d5bb39c7ff3df9fa2e6619856703f71ab5c8a85cdd8a14e9a3b115bad9e",
+    "explorerUrl": "https://snowtrace.io/tx/0x3d405d5bb39c7ff3df9fa2e6619856703f71ab5c8a85cdd8a14e9a3b115bad9e",
+    "timestamp": 1781655739,
+    "isSimulated": false
+  },
+  {
+    "fileName": "Copia_de_Areas_lotes.pdf",
+    "description": "Plano oficial de áreas y linderos de los 8 lotes de restauración",
+    "cid": "bafkreic3sdyrfgdas435chxo2e6hhtl76igabty6whk6pe7hykdbubu67y",
+    "sha256Hash": "c1a5682c9920c7ea3bfc9155581a65073d15cfa38938471d97eeb1ccc529fbf4",
+    "publicLink": "https://gateway.pinata.cloud/ipfs/bafkreic3sdyrfgdas435chxo2e6hhtl76igabty6whk6pe7hykdbubu67y",
+    "txHash": "0x73fc66291ab2769f0ee7839facb98b5e471d45e76ed1d05d1d5f92cecdea3e0d",
+    "explorerUrl": "https://snowtrace.io/tx/0x73fc66291ab2769f0ee7839facb98b5e471d45e76ed1d05d1d5f92cecdea3e0d",
+    "timestamp": 1781655745,
+    "isSimulated": false
+  }
+]
