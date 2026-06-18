@@ -24,8 +24,8 @@ const SPECIES_BY_LOTE: Record<number, string[]> = {
 };
 
 const AREA_BY_LOTE: Record<number, string> = {
-  1: '4.2 Ha', 2: '3.8 Ha', 3: '5.1 Ha', 4: '2.9 Ha',
-  5: '4.7 Ha', 6: '3.5 Ha', 7: '6.2 Ha', 8: '4.0 Ha',
+  1: '1.10 Ha', 2: '1.83 Ha', 3: '1.17 Ha', 4: '4.74 Ha',
+  5: '0.70 Ha', 6: '1.43 Ha', 7: '3.48 Ha', 8: '7.35 Ha',
 };
 
 // Colour palette — emerald/green scale for a serious and cohesive brand theme

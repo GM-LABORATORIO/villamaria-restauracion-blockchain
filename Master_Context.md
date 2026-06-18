@@ -191,6 +191,12 @@ Optimizer   : Enabled (200 runs)
 | Actualización Frontend | Modificados `NotaryCertificateModal.tsx`, `BlockchainVerifier.tsx` y `Footer.tsx` | ✅ |
 | Validación Build | Build completo sin errores de TypeScript y estáticos | ✅ |
 
+### [18/06/2026 — Ajuste de Área]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Corrección de áreas | Modificación de Área Total Intervenida a 21.8 Ha y desglose por lotes según PDF oficial | ✅ |
+| Validación Build | Build completo sin errores de TypeScript y estáticos | ✅ |
+
 ### Siguiente Paso
 ```bash
 # En la terminal para desplegar a Vercel producción:

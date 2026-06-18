@@ -73,7 +73,7 @@ export default function Home() {
           <div className="glass-card p-6 rounded-2xl border border-white/5 flex items-center justify-between hover:border-emerald-500/20 transition-all duration-300">
             <div className="space-y-1">
               <span className="text-xs font-mono text-emerald-400 font-semibold tracking-widest uppercase block">Área Total Intervenida</span>
-              <p className="text-4xl font-extrabold text-white">34.4 Ha</p>
+              <p className="text-4xl font-extrabold text-white">21.8 Ha</p>
               <p className="text-xs text-slate-400 font-sans">8 Lotes debidamente delimitados</p>
             </div>
             <div className="bg-emerald-950/30 p-3 rounded-xl border border-emerald-500/10 flex items-center justify-center">
