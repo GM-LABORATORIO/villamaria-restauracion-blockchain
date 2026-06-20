@@ -197,11 +197,15 @@ Optimizer   : Enabled (200 runs)
 | Corrección de áreas | Modificación de Área Total Intervenida a 21.8 Ha y desglose por lotes según PDF oficial | ✅ |
 | Validación Build | Build completo sin errores de TypeScript y estáticos | ✅ |
 
+### [20/06/2026 — Desglose de Siembras y Mantenimientos]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Desglose de Árboles | Modificación de `ImpactCounter` y `page.tsx` para mostrar 5.500 mantenimientos y 5.400 siembras | ✅ |
+| Simetría Visual UI/UX | Rediseñadas tarjetas de Área y Ejecución con sub-contadores simétricos para máxima transparencia | ✅ |
+| Validación de Build | Build de Next.js ejecutado exitosamente sin errores | ✅ |
+
 ### Siguiente Paso
 ```bash
-# En la terminal para desplegar a Vercel producción:
-npx vercel login     # Iniciar sesión en Vercel
-npx vercel --prod    # Lanzar deploy a producción
+# Para desplegar a Vercel producción con los nuevos cambios:
+npx vercel --prod
 ```
-
-

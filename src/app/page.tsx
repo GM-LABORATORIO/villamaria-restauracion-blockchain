@@ -57,42 +57,78 @@ export default function Home() {
         </section>
 
         {/* Dashboard de Métricas */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           
           <ImpactCounter
             target={10900}
             label="Árboles Forestados"
-            subLabel="Individuos nativos plantados"
+            subLabel="Individuos nativos en el ecosistema"
             icon={
-              <svg className="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <svg className="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 20V10M18 10a6 6 0 00-12 0M12 4v6M12 14l-4-4m4 4l4-4" />
               </svg>
             }
+            breakdown={[
+              { label: "Mantenimientos", target: 5500, subLabel: "Árboles sembrados anteriormente", colorClass: "text-emerald-400" },
+              { label: "Siembras", target: 5400, subLabel: "Nuevos árboles plantados", colorClass: "text-blue-400" }
+            ]}
           />
 
-          <div className="glass-card p-6 rounded-2xl border border-white/5 flex items-center justify-between hover:border-emerald-500/20 transition-all duration-300">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-emerald-400 font-semibold tracking-widest uppercase block">Área Total Intervenida</span>
-              <p className="text-4xl font-extrabold text-white">21.8 Ha</p>
-              <p className="text-xs text-slate-400 font-sans">8 Lotes debidamente delimitados</p>
-            </div>
-            <div className="bg-emerald-950/30 p-3 rounded-xl border border-emerald-500/10 flex items-center justify-center">
-              <svg className="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L16 4m0 13V4m0 0L9 7" />
-              </svg>
+          <div className="glass-card p-6 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-emerald-500/20 transition-all duration-300 h-full">
+            <div className="space-y-4 w-full">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono text-emerald-400 font-semibold tracking-widest uppercase block">Área Total Intervenida</span>
+                <div className="bg-emerald-950/30 p-2.5 rounded-xl border border-emerald-500/10 shadow-inner flex items-center justify-center">
+                  <svg className="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L16 4m0 13V4m0 0L9 7" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-4xl font-extrabold text-white tracking-tight">21.8 Ha</p>
+                <p className="text-xs text-slate-400 font-sans mt-0.5">8 Lotes debidamente delimitados</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 pt-3.5 border-t border-white/5">
+                <div className="space-y-0.5">
+                  <span className="text-[10px] font-mono text-emerald-400 font-bold block uppercase tracking-wider">Predios</span>
+                  <p className="text-lg font-bold text-white">3</p>
+                  <p className="text-[10px] text-slate-500">La Albania, Carpeta...</p>
+                </div>
+                <div className="space-y-0.5">
+                  <span className="text-[10px] font-mono text-blue-400 font-bold block uppercase tracking-wider">Lotes</span>
+                  <p className="text-lg font-bold text-white">8</p>
+                  <p className="text-[10px] text-slate-500">Polígonos trazables</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="glass-card p-6 rounded-2xl border border-white/5 flex items-center justify-between hover:border-blue-500/20 transition-all duration-300 sm:col-span-2 lg:col-span-1">
-            <div className="space-y-1">
-              <span className="text-xs font-mono text-blue-400 font-semibold tracking-widest uppercase block">Estado Ejecución</span>
-              <p className="text-4xl font-extrabold text-white">100%</p>
-              <p className="text-xs text-slate-400 font-sans">Fase 1 Notarizada y Certificada</p>
-            </div>
-            <div className="bg-blue-950/30 p-3 rounded-xl border border-blue-500/10 flex items-center justify-center">
-              <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
+          <div className="glass-card p-6 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-blue-500/20 transition-all duration-300 h-full sm:col-span-2 lg:col-span-1">
+            <div className="space-y-4 w-full">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono text-blue-400 font-semibold tracking-widest uppercase block">Estado Ejecución</span>
+                <div className="bg-blue-950/30 p-2.5 rounded-xl border border-blue-500/10 shadow-inner flex items-center justify-center">
+                  <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p className="text-4xl font-extrabold text-white tracking-tight">100%</p>
+                <p className="text-xs text-slate-400 font-sans mt-0.5">Fase 1 Notarizada y Certificada</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 pt-3.5 border-t border-white/5">
+                <div className="space-y-0.5">
+                  <span className="text-[10px] font-mono text-emerald-400 font-bold block uppercase tracking-wider">Registros</span>
+                  <p className="text-lg font-bold text-white">9 / 9</p>
+                  <p className="text-[10px] text-slate-500">Documentos oficiales</p>
+                </div>
+                <div className="space-y-0.5">
+                  <span className="text-[10px] font-mono text-blue-400 font-bold block uppercase tracking-wider">Red</span>
+                  <p className="text-lg font-bold text-white">Avalanche</p>
+                  <p className="text-[10px] text-slate-500">Mainnet (C-Chain)</p>
+                </div>
+              </div>
             </div>
           </div>
 
