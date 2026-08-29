@@ -35,10 +35,17 @@ export default function Header() {
         {/* Left — Institutional Logos */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
+            src="/isotype.png"
+            alt="Isotipo Ecosistema Blockchain"
+            width={34}
+            height={34}
+            className="object-contain drop-shadow-md rounded-lg border border-emerald-500/20"
+          />
+          <Image
             src="/escudo-municipio.png"
             alt="Escudo Municipio de Villamaría"
-            width={36}
-            height={36}
+            width={32}
+            height={32}
             className="object-contain drop-shadow-md"
           />
           <div className="h-7 w-px bg-white/10 hidden sm:block" />

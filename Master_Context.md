@@ -9,8 +9,7 @@
 - [x] **IPFS:** 9 documentos subidos a Pinata (CIDs reales)
 - [x] **Blockchain:** Contrato `DocumentNotary.sol` desplegado en Avalanche C-Chain Mainnet
 - [x] **Notarización:** 9/9 documentos notarizados on-chain con TXID reales
-- [x] **Web:** Landing Page (Next.js + Tailwind) — build exitoso
-- [ ] **Deploy:** Vercel (pendiente login del usuario)
+- [x] **Deploy & Dominio:** Vercel + Dominio Oficial HTTPS en vivo (`https://restauraciontecnoambiental.com`)
 
 ---
 
@@ -204,8 +203,29 @@ Optimizer   : Enabled (200 runs)
 | Simetría Visual UI/UX | Rediseñadas tarjetas de Área y Ejecución con sub-contadores simétricos para máxima transparencia | ✅ |
 | Validación de Build | Build de Next.js ejecutado exitosamente sin errores | ✅ |
 
-### Siguiente Paso
-```bash
-# Para desplegar a Vercel producción con los nuevos cambios:
-npx vercel --prod
+### [29/08/2026 — Sesión Vinculación Dominio Oficial Vercel]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Dominio Oficial | Asignado `restauraciontecnoambiental.com` en Vercel Dashboard | ✅ |
+| Registros DNS | `A: 216.198.79.1` y `CNAME: 9a9160db0231c4c9.vercel-dns-017.com.` verificados | ✅ |
+| Certificado SSL | Certificado SSL/TLS (Let's Encrypt) emitido y activo (HTTP 200 OK) | ✅ |
+
+### [29/08/2026 — Sesión Branding & Open Graph Preview]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Isotipo 3D Oficial | Diseñado e integrado `isotype.png` (Hoja esmeralda + red hexagonal de nodos blockchain) | ✅ |
+| Favicon & App Icons | Generados `icon.png`, `apple-icon.png`, `shortcut` para pestañas y dispositivos | ✅ |
+| Open Graph Social Banner | Diseñado `og-banner.png` (1200x630) con paisaje andino + datos holográficos | ✅ |
+| Metadata Social | Configurado `layout.tsx` con títulos, descripciones, tags y tarjetas para WhatsApp / LinkedIn / Twitter | ✅ |
+
+### Estado del Ecosistema
 ```
+Sitio Oficial: https://restauraciontecnoambiental.com
+Red Blockchain: Avalanche C-Chain Mainnet
+Notarización : 9/9 documentos inmutables auditables
+Branding      : Isotipo 3D Esmeralda + Open Graph Social Banner 1200x630
+```
+
+
+
+
