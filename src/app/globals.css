@@ -167,3 +167,15 @@ html {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+/* Ocultar botones de brújula y orientación del mapa (N) */
+.mapboxgl-ctrl-compass,
+.maplibregl-ctrl-compass,
+.leaflet-control-compass,
+.leaflet-control-rotate,
+.compass-control,
+button[aria-label*="Reset bearing"],
+button[aria-label*="North"] {
+  display: none !important;
+}
+
