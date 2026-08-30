@@ -1,362 +1,139 @@
 {
-  "totalIndividuos": 10900,
+  "totalIndividuos": 5400,
   "speciesDistribution": [
     {
       "name": "Roble",
-      "count": 120,
-      "categoria": "Árboles Nobles"
+      "count": 1840
     },
     {
       "name": "Cedro",
-      "count": 61,
-      "categoria": "Árboles Nobles"
-    },
-    {
-      "name": "Pino colombiano",
-      "count": 53,
-      "categoria": "Árboles Nobles"
-    },
-    {
-      "name": "Cucharo",
-      "count": 46,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Niguito",
-      "count": 32,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 1150
     },
     {
       "name": "Amargoso",
-      "count": 32,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Encenillo",
-      "count": 31,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Olivo",
-      "count": 20,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Cinco dedos",
-      "count": 18,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Corono",
-      "count": 15,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Aliso",
-      "count": 15,
-      "categoria": "Árboles Nobles"
-    },
-    {
-      "name": "Chilca",
-      "count": 13,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Mano de oso",
-      "count": 12,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 829
     },
     {
       "name": "Fresno",
-      "count": 12,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Arboloco",
-      "count": 10,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Candelo",
-      "count": 10,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Pino",
-      "count": 10,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 771
     },
     {
       "name": "Garrocho",
-      "count": 9,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 173
     },
     {
-      "name": "Eugenia",
-      "count": 9,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Chilco blanco",
-      "count": 9,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Eucalipto",
-      "count": 8,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Camargo",
-      "count": 8,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Drago",
-      "count": 8,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Casco de buey",
-      "count": 6,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Pino ciprés",
-      "count": 6,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Carbonero",
-      "count": 6,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Chilca blanca",
-      "count": 6,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Quiebra barrigo",
-      "count": 5,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Siete cueros",
-      "count": 5,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Nacedero",
-      "count": 5,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Cucharo",
+      "count": 158
     },
     {
       "name": "Yopo",
-      "count": 4,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 99
+    },
+    {
+      "name": "Casco de buey",
+      "count": 93
     },
     {
       "name": "Acacia",
-      "count": 4,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Pino patula",
-      "count": 4,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Chilco",
-      "count": 4,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Gaque",
-      "count": 3,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Niguito rojo",
-      "count": 3,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Riñon",
-      "count": 3,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Siete cueros t. groza",
-      "count": 2,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Churibio",
-      "count": 2,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Pino colombiano,bueno",
-      "count": 2,
-      "categoria": "Árboles Nobles"
-    },
-    {
-      "name": "Pino cipres",
-      "count": 2,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Ceiba",
-      "count": 2,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Nispero",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 82
     },
     {
       "name": "Guayacan",
-      "count": 1,
-      "categoria": "Árboles Nobles"
+      "count": 56
     },
     {
-      "name": "Cordoncillo",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Mano de oso",
+      "count": 30
     },
     {
-      "name": "Siete cueros t.groza",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Arboloco",
+      "count": 25
     },
     {
-      "name": "Colombiano",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Churibio",
+      "count": 24
     },
     {
-      "name": "Pino colombiano, bueno, borde lote 3 hacia la",
-      "count": 1,
-      "categoria": "Árboles Nobles"
+      "name": "Quiebra barrigo",
+      "count": 19
     },
     {
-      "name": "Bueno",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Olivo",
+      "count": 17
     },
     {
-      "name": "Tachuelo",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Carbonero",
+      "count": 15
     },
     {
-      "name": "Frutillo de tuna",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Nacedero",
+      "count": 10
     },
     {
-      "name": "Arando enano",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Gaque",
+      "count": 2
     },
     {
-      "name": "Palma real",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Eugenia",
+      "count": 2
     },
     {
-      "name": "Azuceno",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Chilca",
+      "count": 2
     },
     {
-      "name": "Aguacatillo",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Yarumo blanco",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "name": "Camargo",
+      "count": 1
     },
     {
       "name": "Buey",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Coronó",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Bueno, borde de via parte alta",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Chilca negra",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 1
     },
     {
       "name": "Amargoso,",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Olivo chiribito",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
-    },
-    {
-      "name": "Chiribito",
-      "count": 1,
-      "categoria": "Arbustos / Polinizadores"
+      "count": 1
     }
   ],
   "lotes": {
     "1": {
       "siembra": 245,
-      "mantenimiento": 200,
-      "total": 445
+      "mantenimiento": 0,
+      "total": 245
     },
     "2": {
       "siembra": 650,
-      "mantenimiento": 370,
-      "total": 1020
+      "mantenimiento": 0,
+      "total": 650
     },
     "3": {
       "siembra": 450,
-      "mantenimiento": 280,
-      "total": 730
+      "mantenimiento": 0,
+      "total": 450
     },
     "4": {
       "siembra": 990,
-      "mantenimiento": 1365,
-      "total": 2355
+      "mantenimiento": 0,
+      "total": 990
     },
     "5": {
       "siembra": 200,
-      "mantenimiento": 260,
-      "total": 460
+      "mantenimiento": 0,
+      "total": 200
     },
     "6": {
       "siembra": 415,
-      "mantenimiento": 105,
-      "total": 520
+      "mantenimiento": 0,
+      "total": 415
     },
     "7": {
       "siembra": 950,
-      "mantenimiento": 1370,
-      "total": 2320
+      "mantenimiento": 0,
+      "total": 950
     },
     "8": {
       "siembra": 1500,
-      "mantenimiento": 1550,
-      "total": 3050
+      "mantenimiento": 0,
+      "total": 1500
     }
   }
 }

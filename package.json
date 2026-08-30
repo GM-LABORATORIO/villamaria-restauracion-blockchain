@@ -14,9 +14,11 @@
     "process:inventory": "node scripts/process_inventario.js"
   },
   "dependencies": {
+    "@types/leaflet.markercluster": "^1.5.6",
     "dotenv": "^17.4.2",
     "ethers": "^6.16.0",
     "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
     "next": "16.2.9",
     "proj4": "^2.20.9",
     "react": "19.2.4",

@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit, Space_Mono } from "next/font/google";
+import MountainAirCanvas from "@/components/MountainAirCanvas";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const outfit = Outfit({
+  variable: "--font-heading",
+  subsets: ["latin"],
+});
+
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
   variable: "--font-mono",
   subsets: ["latin"],
 });
@@ -84,9 +91,12 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
+      className={`${plusJakartaSans.variable} ${outfit.variable} ${spaceMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col relative bg-[#060a15] text-[#eef2f9]">
+        <MountainAirCanvas />
+        <div className="relative z-10 flex-1 flex flex-col">{children}</div>
+      </body>
     </html>
   );
 }
