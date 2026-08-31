@@ -218,7 +218,6 @@ export default function LoteMap() {
 
     const cluster = L.markerClusterGroup({
       chunkedLoading: true,
-      chunkSize: 400,
       chunkDelay: 30,
       disableClusteringAtZoom: 16,
       maxClusterRadius: 46,
