@@ -1,98 +1,119 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 interface Species {
   name: string;
   scientificName: string;
   role: string;
   desc: string;
+  ecoImportance: string;
   category: 'Árbol Noble' | 'Arbusto / Pionera';
   status: 'Preocupación Menor' | 'Vulnerable' | 'Casi Amenazada' | 'En Peligro';
-  icon: string;
+  image: string;
+  altText: string;
 }
 
 const SPECIES_DATA: Species[] = [
   {
-    name: 'Roble',
+    name: 'Roble Negro / de Montaña',
     scientificName: 'Quercus humboldtii',
-    role: 'Almacenamiento masivo de carbono y retención de suelos.',
-    desc: 'Es el pilar de los bosques altoandinos. Sus raíces robustas evitan la erosión de laderas empinadas en la cuenca del Chupaderos. Provee un dosel denso que protege la microfauna.',
+    role: 'Anclaje profundo de laderas y prevención de desprendimientos.',
+    desc: 'Especie insignia de los bosques de niebla andinos. Desarrolla un sistema de raíces pivotantes que penetran la roca madre, actuando como pilares naturales contra deslizamientos en la cuenca Chupaderos.',
+    ecoImportance: 'Un solo roble adulto puede almacenar más de 2.5 toneladas de carbono y filtrar miles de litros de agua de escorrentía hacia el acuífero subterráneo de Villamaría.',
     category: 'Árbol Noble',
     status: 'Vulnerable',
-    icon: '🌳',
+    image: '/fotos/roble-1.jpg',
+    altText: 'Especécimen adulto de Roble de Montaña (Quercus humboldtii) en bosque altoandino',
   },
   {
     name: 'Pino Colombiano',
     scientificName: 'Retrophyllum rospigliosii',
-    role: 'Captación de agua de niebla y patrimonio forestal.',
-    desc: 'Única conífera nativa de Colombia, actualmente catalogada en peligro por sobreexplotación histórica. Capta humedad directamente de la neblina andina, recargando los acuíferos locales.',
+    role: 'Captura masiva de agua de niebla y recarga hídrica.',
+    desc: 'Única conífera nativa de Colombia y especie amenazada. Su copa densa intercepta la neblina andina constante, condensándola en gotas que alimentan de forma continua el caudal del río.',
+    ecoImportance: 'Sus acículas retienen hasta un 40% más de humedad atmosférica que otras especies, actuando como una esponja viva esencial para la seguridad hídrica regional.',
     category: 'Árbol Noble',
     status: 'En Peligro',
-    icon: '🌲',
+    image: '/fotos/pino-colombiano-1.jpg',
+    altText: 'Árbol adulto de Pino Colombiano (Retrophyllum rospigliosii) en hábitat nativo',
   },
   {
-    name: 'Cedro',
+    name: 'Cedro de Montaña',
     scientificName: 'Cedrela montana',
-    role: 'Restauración del dosel forestal superior.',
-    desc: 'Árbol de gran porte y lento crecimiento. Clave para restaurar la estructura del bosque maduro. Sus flores atraen una gran variedad de insectos y sus frutos alimentan loros y tucanes andinos.',
+    role: 'Restauración del dosel alto y refugio de avifauna.',
+    desc: 'Alcanza alturas superiores a los 25 metros. Su madera noble y follaje espacioso proporcionan hábitat y sitios de nidificación para el Loro Orejiamarillo y el Tucán Andino.',
+    ecoImportance: 'Regula la temperatura del microclima forestal y enriquece el suelo a través de la hojarasca nitrogenada que cae estacionalmente.',
     category: 'Árbol Noble',
     status: 'Vulnerable',
-    icon: '🪵',
-  },
-  {
-    name: 'Nigüito',
-    scientificName: 'Miconia theaezans',
-    role: 'Alimento clave para avifauna y dispersores de semillas.',
-    desc: 'Especie pionera sumamente resistente. Produce frutos pequeños y dulces de forma constante durante todo el año, lo que la convierte en la principal fuente de alimento para aves e insectos de la zona.',
-    category: 'Arbusto / Pionera',
-    status: 'Preocupación Menor',
-    icon: '🍇',
-  },
-  {
-    name: 'Mano de Oso',
-    scientificName: 'Oreopanax floribundus',
-    role: 'Regulación del microclima y retención de humedad.',
-    desc: 'Sus grandes hojas en forma de mano actúan como paraguas naturales, amortiguando el impacto de la lluvia sobre el suelo y evitando la compactación del terreno. Aporta abundante materia orgánica.',
-    category: 'Arbusto / Pionera',
-    status: 'Preocupación Menor',
-    icon: '🍁',
-  },
-  {
-    name: 'Arboloco',
-    scientificName: 'Montanoa quadrangularis',
-    role: 'Crecimiento rápido para recuperación de suelos degradados.',
-    desc: 'Crece a gran velocidad en zonas descubiertas, creando sombra que permite a otras especies de crecimiento lento establecerse. Sus raíces retienen agua de manera sobresaliente.',
-    category: 'Arbusto / Pionera',
-    status: 'Preocupación Menor',
-    icon: '🌿',
+    image: '/fotos/cedro-1.jpg',
+    altText: 'Cedro de Montaña adulto (Cedrela montana) en dosel altoandino',
   },
   {
     name: 'Encenillo',
     scientificName: 'Weinmannia tomentosa',
-    role: 'Protección de nacimientos de agua y captador hídrico.',
-    desc: 'Especie adaptada a la alta montaña. Sus hojas pequeñas y vellosas atrapan la neblina del páramo, condensándola en gotas de agua que recargan el caudal de la Quebrada Chupaderos.',
+    role: 'Protección de nacimientos de agua y franja de páramo.',
+    desc: 'Especie clave en la transición entre el bosque de niebla y el páramo del Nevado del Ruiz. Hojas coriáceas cubiertas de vello peltado adaptadas a bajas temperaturas y vientos fuertes.',
+    ecoImportance: 'Crea una densa capa de mantillo orgánico que retiene sedimentos, garantizando la pureza cristalina del agua que llega a la bocatoma.',
     category: 'Árbol Noble',
     status: 'Preocupación Menor',
-    icon: '🌱',
-  },
-  {
-    name: 'Cucharo',
-    scientificName: 'Myrsine guianensis',
-    role: 'Barrera cortaviento y resistencia climática.',
-    desc: 'Muy resistente a heladas andinas y vientos fuertes. Protege a los individuos más jóvenes y actúa como catalizador de regeneración natural gracias a sus frutos altamente apetecidos por aves.',
-    category: 'Arbusto / Pionera',
-    status: 'Preocupación Menor',
-    icon: '🍒',
+    image: '/fotos/encenillo-1.jpg',
+    altText: 'Encenillo adulto (Weinmannia tomentosa) en zona de páramo y niebla',
   },
   {
     name: 'Siete Cueros',
     scientificName: 'Tibouchina lepidota',
-    role: 'Polinización activa y estabilización de taludes.',
-    desc: 'Destaca por su abundante floración fucsia que atrae masivamente abejas y abejorros nativos. Su sistema radicular denso y superficial fija las capas del suelo en laderas inestables.',
+    role: 'Polinización masiva y fijación rápida de taludes.',
+    desc: 'Reconocido por su espectacular floración morada y corteza hojosa. Atrae intensamente a polinizadores nativos, acelerando la fecundación del ecosistema circundante.',
+    ecoImportance: 'Sus raíces leñosas entrelazadas estabilizan cortes de carretera y bordes de quebradas en tiempo récord.',
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
-    icon: '🌸',
+    image: '/fotos/siete-cueros-1.jpg',
+    altText: 'Siete Cueros adulto (Tibouchina lepidota) florecido en alta montaña',
+  },
+  {
+    name: 'Nigüito',
+    scientificName: 'Miconia theaezans',
+    role: 'Despensa alimenticia permanente para la fauna silvestre.',
+    desc: 'Fructifica ininterrumpidamente durante todo el año. Sus pequeñas bayas moradas son el alimento básico de más de 35 especies de aves dispersoras de semillas.',
+    ecoImportance: 'Catalizador de la regeneración natural espontánea: las aves digieren sus frutos y siembran nuevas especies nativas por todo el ecosistema.',
+    category: 'Arbusto / Pionera',
+    status: 'Preocupación Menor',
+    image: '/fotos/niguito-1.jpg',
+    altText: 'Arbusto adulto de Nigüito (Miconia theaezans) con bayas en bosque andino',
+  },
+  {
+    name: 'Mano de Oso',
+    scientificName: 'Oreopanax floribundus',
+    role: 'Sombrilla natural y amortiguador de lluvias intensas.',
+    desc: 'Presenta grandes hojas palmeadas que dispersan la fuerza de las lluvias torrenciales de montaña, reduciendo la erosión hídrica superficial sobre el suelo del bosque.',
+    ecoImportance: 'Genera un microclima húmedo y sombreado propicio para el establecimiento de musgos, orquídeas y helechos epífitos.',
+    category: 'Arbusto / Pionera',
+    status: 'Preocupación Menor',
+    image: '/fotos/mano-de-oso-1.jpg',
+    altText: 'Mano de Oso adulto (Oreopanax floribundus) con hojarasca frondosa',
+  },
+  {
+    name: 'Cucharo',
+    scientificName: 'Myrsine guianensis',
+    role: 'Barrera cortavientos y nodriza ambiental.',
+    desc: 'Resistente a heladas y ráfagas de viento frío provenientes del pico del volcán. Resguarda a los brotes y plántulas más jóvenes durante sus primeros años de crecimiento.',
+    ecoImportance: 'Fija minerales en el suelo y previene la desecación del terreno durante épocas de menor precipitación.',
+    category: 'Arbusto / Pionera',
+    status: 'Preocupación Menor',
+    image: '/fotos/cucharo-1.jpg',
+    altText: 'Cucharo adulto (Myrsine guianensis) resistente en ladera andina',
+  },
+  {
+    name: 'Arboloco',
+    scientificName: 'Montanoa quadrangularis',
+    role: 'Recuperador veloz de suelos degradados y fijador de humedad.',
+    desc: 'Crece hasta 3 metros por año. Su tallo esponjoso almacena grandes volúmenes de agua durante la temporada de lluvias y los libera gradualmente al suelo seco.',
+    ecoImportance: 'Pionero por excelencia: su rápida cobertura vegetal crea el colchón de sombra necesario para el posterior retorno de los Robles y Cedros.',
+    category: 'Arbusto / Pionera',
+    status: 'Preocupación Menor',
+    image: '/fotos/arboloco-1.jpg',
+    altText: 'Arboloco adulto (Montanoa quadrangularis) en etapa de regeneración rápida',
   },
 ];
 
@@ -101,112 +122,147 @@ export default function SpeciesExplorer() {
 
   return (
     <div className="space-y-8">
-      {/* 3x3 Grid */}
+      {/* Grid Display */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {SPECIES_DATA.map((sp) => (
           <div
             key={sp.name}
             onClick={() => setSelected(sp)}
-            className="group relative bg-[#0b1329]/70 hover:bg-[#0e1a38] border border-white/5 hover:border-emerald-500/30 p-6 rounded-2xl cursor-pointer transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+            className="group bg-[#0c1222]/90 hover:bg-[#0f1830] border border-white/10 hover:border-emerald-500/40 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 transform hover:-translate-y-1 shadow-xl flex flex-col justify-between"
           >
-            {/* Hover glow line */}
-            <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-
-            <div className="flex items-start justify-between gap-4">
-              <div className="space-y-2">
-                <span className={`inline-block text-[10px] font-mono px-2 py-0.5 rounded-full border ${
+            {/* Adult Tree Photo Header */}
+            <div className="relative h-48 w-full overflow-hidden bg-slate-900">
+              <Image
+                src={sp.image}
+                alt={sp.altText}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1222] via-transparent to-black/30" />
+              
+              {/* Category Badge */}
+              <div className="absolute top-3 left-3 flex gap-2">
+                <span className={`text-[10px] font-mono font-bold px-2.5 py-1 rounded-full border backdrop-blur-md ${
                   sp.category === 'Árbol Noble'
-                    ? 'bg-blue-950/40 text-blue-400 border-blue-500/20'
-                    : 'bg-emerald-950/40 text-emerald-400 border-emerald-500/20'
+                    ? 'bg-blue-950/80 text-blue-300 border-blue-500/40'
+                    : 'bg-emerald-950/80 text-emerald-300 border-emerald-500/40'
                 }`}>
-                  {sp.category}
+                  {sp.category.toUpperCase()}
                 </span>
-                <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+              </div>
+
+              {/* UICN Badge */}
+              <div className="absolute top-3 right-3">
+                <span className={`text-[10px] font-mono font-bold px-2.5 py-1 rounded-full border backdrop-blur-md ${
+                  sp.status === 'En Peligro'
+                    ? 'bg-rose-950/80 text-rose-300 border-rose-500/40'
+                    : sp.status === 'Vulnerable'
+                    ? 'bg-amber-950/80 text-amber-300 border-amber-500/40'
+                    : 'bg-emerald-950/80 text-emerald-300 border-emerald-500/40'
+                }`}>
+                  UICN · {sp.status}
+                </span>
+              </div>
+            </div>
+
+            {/* Card Content */}
+            <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors font-heading">
                   {sp.name}
                 </h3>
-                <p className="text-xs italic text-slate-400 font-mono">{sp.scientificName}</p>
-                <p className="text-sm text-slate-300 leading-relaxed pt-1 line-clamp-2">
+                <p className="text-xs italic text-slate-400 font-mono mt-0.5">{sp.scientificName}</p>
+                <p className="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-3">
                   {sp.role}
                 </p>
               </div>
 
-              <span className="bg-[#020617] p-3 rounded-xl border border-white/5 group-hover:border-emerald-500/20 transition-colors flex items-center justify-center">
-                {sp.category === 'Árbol Noble' ? (
-                  <svg className="w-7 h-7 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 20V10M18 10a6 6 0 00-12 0M12 4v6M12 14l-4-4m4 4l4-4" />
-                  </svg>
-                ) : (
-                  <svg className="w-7 h-7 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 20V10m0 0a4 4 0 014-4h2m-6 4a4 4 0 00-4-4H6m6 14a2 2 0 100-4 2 2 0 000 4z" />
-                  </svg>
-                )}
-              </span>
-            </div>
-
-            <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
-              <span className="font-mono">Estado: {sp.status}</span>
-              <span className="text-emerald-400/80 group-hover:translate-x-1 transition-transform font-medium">
-                Ver detalle →
-              </span>
+              <div className="pt-3 border-t border-white/5 flex items-center justify-between text-xs text-slate-400 font-mono">
+                <span className="text-[10px] text-emerald-400/90 font-bold uppercase tracking-wider">Ver Ficha Ecológica</span>
+                <span className="text-emerald-400 group-hover:translate-x-1 transition-transform font-bold">
+                  →
+                </span>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Modal */}
+      {/* Modal View for Detailed Ecological Impact */}
       {selected && (
-        <div className="fixed inset-0 bg-[#020617]/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-opacity duration-300">
+        <div
+          className="fixed inset-0 bg-[#020617]/90 backdrop-blur-md z-[9999] flex items-center justify-center p-4"
+          onClick={() => setSelected(null)}
+        >
           <div
-            className="bg-[#0b1329] border border-white/10 rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl relative animate-in fade-in zoom-in-95 duration-200"
+            className="bg-[#0b1329] border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl animate-fadeIn text-white my-auto max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Header glow */}
-            <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-blue-500 via-blue-600 to-emerald-500" />
-            
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors text-lg"
-            >
-              ✕
-            </button>
+            {/* Modal Image Header */}
+            <div className="relative h-64 w-full bg-slate-900">
+              <Image
+                src={selected.image}
+                alt={selected.altText}
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b1329] via-black/20 to-black/40" />
 
-            <div className="p-8 space-y-6">
-              <div className="flex items-center gap-5">
-                <span className="bg-[#020617] p-4 rounded-2xl border border-white/5 flex items-center justify-center">
-                  {selected.category === 'Árbol Noble' ? (
-                    <svg className="w-10 h-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 20V10M18 10a6 6 0 00-12 0M12 4v6M12 14l-4-4m4 4l4-4" />
-                    </svg>
-                  ) : (
-                    <svg className="w-10 h-10 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 20V10m0 0a4 4 0 014-4h2m-6 4a4 4 0 00-4-4H6m6 14a2 2 0 100-4 2 2 0 000 4z" />
-                    </svg>
-                  )}
+              <button
+                onClick={() => setSelected(null)}
+                className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/70 border border-white/20 text-white flex items-center justify-center font-bold hover:bg-rose-600 transition-all cursor-pointer z-10"
+              >
+                ✕
+              </button>
+
+              <div className="absolute bottom-4 left-6 right-6">
+                <span className="text-[10px] font-mono font-bold text-emerald-300 bg-[#060a15]/90 border border-emerald-500/40 px-3 py-1 rounded-full uppercase tracking-wider">
+                  ESPECIE ADULTA NATIVA EN HABITAT DE MONTAÑA
                 </span>
-                <div className="space-y-1">
-                  <h4 className="text-2xl font-bold text-white">{selected.name}</h4>
-                  <p className="text-sm italic text-slate-400 font-mono">{selected.scientificName}</p>
-                </div>
+                <h3 className="text-3xl font-extrabold text-white mt-1 font-heading">{selected.name}</h3>
+                <p className="text-xs text-slate-300 italic font-mono">{selected.scientificName}</p>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 space-y-5">
+              <div className="flex flex-wrap gap-2 text-xs font-mono">
+                <span className={`px-3 py-1 rounded-md font-bold ${
+                  selected.category === 'Árbol Noble'
+                    ? 'bg-blue-500/20 text-blue-300 border border-blue-500/40'
+                    : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                }`}>
+                  {selected.category}
+                </span>
+                <span className={`px-3 py-1 rounded-md font-bold ${
+                  selected.status === 'En Peligro'
+                    ? 'bg-rose-500/20 text-rose-300 border border-rose-500/40'
+                    : selected.status === 'Vulnerable'
+                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                    : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                }`}>
+                  UICN · {selected.status}
+                </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-[#020617] p-3 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-500 block uppercase font-mono tracking-wider">Categoría</span>
-                  <span className="text-sm font-semibold text-white">{selected.category}</span>
-                </div>
-                <div className="bg-[#020617] p-3 rounded-xl border border-white/5">
-                  <span className="text-[10px] text-slate-500 block uppercase font-mono tracking-wider">Estado de Conservación</span>
-                  <span className={`text-sm font-semibold ${
-                    selected.status === 'En Peligro' ? 'text-red-400' : selected.status === 'Vulnerable' ? 'text-amber-400' : 'text-emerald-400'
-                  }`}>{selected.status}</span>
-                </div>
+              {/* Role & Description */}
+              <div className="space-y-2">
+                <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-400">Función Biológica Principales</h4>
+                <p className="text-sm text-slate-200 leading-relaxed font-sans bg-[#020617] p-4 rounded-xl border border-white/5">
+                  {selected.desc}
+                </p>
               </div>
 
-              <div className="space-y-4">
-                <div className="space-y-1">
-                  <span className="text-[10px] text-slate-500 uppercase font-mono tracking-wider block">Papel Ecológico</span>
-                  <p className="text-slate-200 text-sm leading-relaxed bg-white/5 p-4 rounded-xl border border-white/5">
-                    {selected.desc}
+              {/* Environmental Impact Details */}
+              <div className="space-y-2">
+                <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-blue-400">Importancia Ambiental en la Cuenca Chupaderos</h4>
+                <div className="bg-gradient-to-r from-emerald-950/30 to-blue-950/30 p-4 rounded-xl border border-emerald-500/20 text-xs text-slate-200 leading-relaxed space-y-2">
+                  <p>{selected.ecoImportance}</p>
+                  <p className="text-[11px] text-slate-400 font-mono pt-2 border-t border-white/5">
+                    ✓ Especie monitoreada e inventariada bajo el convenio SGR-SC-001-2025 en Villamaría, Caldas.
                   </p>
                 </div>
               </div>
@@ -214,9 +270,9 @@ export default function SpeciesExplorer() {
               <div className="flex justify-end pt-2">
                 <button
                   onClick={() => setSelected(null)}
-                  className="bg-brand-green hover:bg-brand-green-light border border-emerald-400/20 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors"
+                  className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-sm transition-all cursor-pointer shadow-lg shadow-emerald-950/50"
                 >
-                  Cerrar
+                  Cerrar Ficha Ecológica
                 </button>
               </div>
             </div>

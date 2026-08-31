@@ -80,7 +80,7 @@ export default function InventarioTecnico() {
   }, [filteredData, currentPage]);
 
   return (
-    <div className="min-h-screen bg-[#020617] text-white flex flex-col">
+    <div className="min-h-screen bg-transparent text-white flex flex-col relative selection:bg-emerald-500 selection:text-white">
       <Header />
 
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 space-y-8 relative z-10">
@@ -94,7 +94,7 @@ export default function InventarioTecnico() {
             Inventario Técnico Forestal
           </h1>
           <p className="text-sm text-slate-400 max-w-3xl leading-relaxed">
-            Base de datos completa de los <strong className="text-slate-200">10,900 individuos</strong> georreferenciados y plantados bajo el Contrato SGR-SC-001-2025. Datos firmados criptográficamente e inmutables en Avalanche.
+            Base de datos completa del censo georreferenciado e inventario forestal plantado bajo el Contrato SGR-SC-001-2025. Datos firmados criptográficamente e inmutables en Avalanche.
           </p>
         </div>
 
@@ -163,11 +163,11 @@ export default function InventarioTecnico() {
                 <strong className="text-slate-300">{data.length.toLocaleString('es-CO')}</strong> individuos
               </p>
               <a
-                href="/data/Localizacion_Individuos_Totales_y_Muestreo_08_06_26.xls"
+                href="/data/FICHA_BASE_DE_DATOS.xlsx"
                 download
-                className="text-emerald-400 hover:underline flex items-center gap-1.5"
+                className="text-emerald-400 hover:underline flex items-center gap-1.5 font-semibold"
               >
-                📥 Descargar Excel Completo (3.4MB)
+                📥 Descargar Excel Completo (FICHA BASE DE DATOS.xlsx)
               </a>
             </div>
 
