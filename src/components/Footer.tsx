@@ -23,9 +23,13 @@ export default function Footer() {
                 height={44}
                 className="object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
-              <span className="text-[10px] font-mono font-bold text-slate-400 bg-white/5 border border-slate-200/10 rounded px-2 py-1 uppercase tracking-wider">
-                Más Progreso E.S.P.
-              </span>
+              <Image
+                src="/logos/masprogreso.png"
+                alt="Más Progreso E.S.P. — Empresa de Desarrollo Territorial"
+                width={48}
+                height={48}
+                className="object-contain h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
               <Image
                 src="/Espacio-y-Gestion-Verde.png"
                 alt="Espacio y Gestión Verde S.A.S."
