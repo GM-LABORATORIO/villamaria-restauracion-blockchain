@@ -230,7 +230,8 @@ Optimizer   : Enabled (200 runs)
 | Fotografías de Biodiversidad | Restauradas las fotos de monitoreo real de campo en `public/fotos/` (`roble-1.jpg`, `pino-colombiano-1.jpg`, etc.) y generada foto de monitoreo en ladera de campo real para Arboloco (`arboloco-1.jpg`), logrando 100% consistencia de inventario | ✅ |
 | Fondo Minimalista Nevado del Ruiz | Removidas las chispas/esporas animadas de `MountainAirCanvas.tsx`. Conservadas las curvas de nivel topográficas SVG e integrado un flujo sutil de brisa y bruma andina sin partículas recargadas | ✅ |
 | Solución Video YouTube | Solucionado el Error 153 e integrado el reproductor `youtube-nocookie.com/embed/kFU8ZiVCVE4` directamente en el Footer al lado de los logos de Entidades del Proyecto | ✅ |
-| Imagen Arboloco Árbol Adulto | Asignada la fotografía botánica del árbol adulto nativo (`/fotos/arboloco_especie.jpg`) tanto en el mosaico de biodiversidad como en la Ficha Ecológica del Arboloco | ✅ |
+| Foto Arboloco Campo Real | Asignada la ruta inmutable (`/fotos/arboloco_oficial_villamaria.jpg` - plántula de ladera con la estaca *"M. quadrangularis - 14/10/2023 - Villamaría"*) para la tarjeta del mosaico y el modal de Ficha Ecológica | ✅ |
+| Logos HD 3 Tarjetas Verticales | Estructurada la Columna 1 del Footer en 3 tarjetas independientes en HD (Más Progreso arriba, Corpocaldas al centro, DNP-SGR abajo) con la directiva `unoptimized` para nitidez cristalina sin borrosidad | ✅ |
 | Validación Build | Compilación de producción en Next.js completada sin errores (`✓ Compiled successfully`) | ✅ |
 
 ### Estado del Ecosistema

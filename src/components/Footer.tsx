@@ -15,28 +15,42 @@ export default function Footer() {
             <span className="text-[10px] uppercase font-mono tracking-wider text-slate-600 block">
               Entidades del Proyecto
             </span>
-            <div className="bg-[#0b1329]/80 border border-white/10 rounded-xl p-4 flex items-center justify-between gap-3 shadow-lg">
-              <Image
-                src="/logos/masprogreso.png"
-                alt="Más Progreso E.S.P. — Empresa de Desarrollo Territorial"
-                width={56}
-                height={56}
-                className="object-contain h-12 w-auto opacity-95 hover:opacity-100 transition-opacity"
-              />
-              <Image
-                src="/logos/corpocaldas.png"
-                alt="Corpocaldas — Corporación Autónoma Regional de Caldas"
-                width={56}
-                height={56}
-                className="object-contain h-12 w-auto opacity-95 hover:opacity-100 transition-opacity"
-              />
-              <Image
-                src="/logos/dnp-sgr.png"
-                alt="Sistema General de Regalías — DNP"
-                width={64}
-                height={48}
-                className="object-contain h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
-              />
+            <div className="space-y-2.5">
+              {/* Box 1: Más Progreso E.S.P. */}
+              <div className="bg-[#0b1329]/90 border border-white/10 rounded-xl p-3 flex items-center justify-center shadow-md hover:border-emerald-500/30 transition-colors">
+                <Image
+                  src="/logos/masprogreso.png"
+                  alt="Más Progreso E.S.P. — Empresa de Desarrollo Territorial"
+                  width={240}
+                  height={80}
+                  unoptimized
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              {/* Box 2: Corpocaldas */}
+              <div className="bg-[#0b1329]/80 border border-white/10 rounded-xl p-3 flex items-center justify-center shadow-md hover:border-emerald-500/30 transition-colors">
+                <Image
+                  src="/logos/corpocaldas.png"
+                  alt="Corpocaldas — Corporación Autónoma Regional de Caldas"
+                  width={200}
+                  height={80}
+                  unoptimized
+                  className="object-contain h-11 w-auto"
+                />
+              </div>
+
+              {/* Box 3: Departamento Nacional de Planeación - SGR */}
+              <div className="bg-[#0b1329]/90 border border-white/10 rounded-xl p-3 flex items-center justify-center shadow-md hover:border-emerald-500/30 transition-colors">
+                <Image
+                  src="/logos/dnp-sgr.png"
+                  alt="Departamento Nacional de Planeación — Sistema General de Regalías (SGR)"
+                  width={280}
+                  height={90}
+                  unoptimized
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
             </div>
             <p className="text-[10px] text-slate-600 leading-normal pt-0.5">
               Convenio interadministrativo para la restauración forestal de áreas de interés hídrico.

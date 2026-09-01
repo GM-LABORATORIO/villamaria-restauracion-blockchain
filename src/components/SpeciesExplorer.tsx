@@ -112,8 +112,8 @@ const SPECIES_DATA: Species[] = [
     ecoImportance: 'Pionero por excelencia: su rápida cobertura vegetal crea el colchón de sombra necesario para el posterior retorno de los Robles y Cedros.',
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
-    image: '/fotos/arboloco_especie.jpg',
-    altText: 'Fotografía botánica de especie adulta: Arboloco (Montanoa quadrangularis) en bosque altoandino',
+    image: '/fotos/arboloco_oficial_villamaria.jpg',
+    altText: 'Fotografía oficial de monitoreo de campo: Arboloco (Montanoa quadrangularis) en Villamaría',
   },
 ];
 
