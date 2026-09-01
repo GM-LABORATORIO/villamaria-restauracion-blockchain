@@ -231,7 +231,7 @@ Optimizer   : Enabled (200 runs)
 | Fondo Minimalista Nevado del Ruiz | Removidas las chispas/esporas animadas de `MountainAirCanvas.tsx`. Conservadas las curvas de nivel topográficas SVG e integrado un flujo sutil de brisa y bruma andina sin partículas recargadas | ✅ |
 | Solución Video YouTube | Solucionado el Error 153 e integrado el reproductor `youtube-nocookie.com/embed/kFU8ZiVCVE4` directamente en el Footer al lado de los logos de Entidades del Proyecto | ✅ |
 | Foto Arboloco Campo Real | Asignada la ruta inmutable (`/fotos/arboloco_oficial_villamaria.jpg` - plántula de ladera con la estaca *"M. quadrangularis - 14/10/2023 - Villamaría"*) para la tarjeta del mosaico y el modal de Ficha Ecológica | ✅ |
-| Logos HD 3 Tarjetas Verticales | Estructurada la Columna 1 del Footer en 3 tarjetas independientes en HD (Más Progreso arriba, Corpocaldas al centro, DNP-SGR abajo) con la directiva `unoptimized` para nitidez cristalina sin borrosidad | ✅ |
+| Sincronización Fotos Campo Real Git | Restauradas y subidas a Git (`origin main`) las fotografías de monitoreo real de campo de `public/fotos/` (`encenillo-1.jpg`, `siete-cueros-1.jpg`, `niguito-1.jpg`, `cucharo-1.jpg`, etc.) eliminando las imágenes secundarias para que la web pública se actualice 100% idéntica al local | ✅ |
 | Validación Build | Compilación de producción en Next.js completada sin errores (`✓ Compiled successfully`) | ✅ |
 
 ### Estado del Ecosistema
