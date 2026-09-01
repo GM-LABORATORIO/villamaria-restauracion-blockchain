@@ -218,6 +218,21 @@ Optimizer   : Enabled (200 runs)
 | Open Graph Social Banner | Diseñado `og-banner.png` (1200x630) con paisaje andino + datos holográficos | ✅ |
 | Metadata Social | Configurado `layout.tsx` con títulos, descripciones, tags y tarjetas para WhatsApp / LinkedIn / Twitter | ✅ |
 
+### [31/08/2026 — Actualización Logos de Entidades & Remoción de Enlace]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Logos de Entidades | Integrados logos oficiales de `public/logos/` (`corpocaldas.png`, `dnp-sgr.png`, `masprogreso.png`) junto a Alcaldía y Espacio y Gestión Verde en el Footer | ✅ |
+| Eliminación Hipervínculo | Removido el enlace `https://www.gmholding.info/` de `Footer.tsx` y `NotaryCertificateModal.tsx`, manteniendo la insignia en texto plano | ✅ |
+| Reorganización Header | Ajustado el ancho máximo a `max-w-[1440px]`, escala de la píldora de aliados a `h-8/h-9` y espaciado de menú para distribución fluida sin cortes | ✅ |
+| Servidor Local | Servidor de desarrollo Next.js (Turbopack) corriendo activamente en `http://localhost:3000` | ✅ |
+| Vista General & Zoom Visor | Calibrado el encuadre panorámico inicial y del botón `fitOverview` a zoom `15.0` en `[4.9665, -75.4740]`, encuadrando las nubes laterales y las esferas de conteo numérico (`892`, `277`, `1.1k`, etc.) exactamente como la captura de referencia | ✅ |
+| Depuración de Logos | Eliminados los logos `escudo-municipio.png` y `Espacio-y-Gestion-Verde.png` del Footer y del modal de certificación | ✅ |
+| Fotografías de Biodiversidad | Restauradas las fotos de monitoreo real de campo en `public/fotos/` (`roble-1.jpg`, `pino-colombiano-1.jpg`, etc.) y generada foto de monitoreo en ladera de campo real para Arboloco (`arboloco-1.jpg`), logrando 100% consistencia de inventario | ✅ |
+| Fondo Minimalista Nevado del Ruiz | Removidas las chispas/esporas animadas de `MountainAirCanvas.tsx`. Conservadas las curvas de nivel topográficas SVG e integrado un flujo sutil de brisa y bruma andina sin partículas recargadas | ✅ |
+| Solución Video YouTube | Solucionado el Error 153 e integrado el reproductor `youtube-nocookie.com/embed/kFU8ZiVCVE4` directamente en el Footer al lado de los logos de Entidades del Proyecto | ✅ |
+| Imagen Arboloco Árbol Adulto | Asignada la fotografía botánica del árbol adulto nativo (`/fotos/arboloco_especie.jpg`) tanto en el mosaico de biodiversidad como en la Ficha Ecológica del Arboloco | ✅ |
+| Validación Build | Compilación de producción en Next.js completada sin errores (`✓ Compiled successfully`) | ✅ |
+
 ### Estado del Ecosistema
 ```
 Sitio Oficial: https://restauraciontecnoambiental.com
