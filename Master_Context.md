@@ -234,6 +234,13 @@ Optimizer   : Enabled (200 runs)
 | Sincronización Fotos Campo Real Git | Restauradas y subidas a Git (`origin main`) las fotografías de monitoreo real de campo de `public/fotos/` (`encenillo-1.jpg`, `siete-cueros-1.jpg`, `niguito-1.jpg`, `cucharo-1.jpg`, etc.) eliminando las imágenes secundarias para que la web pública se actualice 100% idéntica al local | ✅ |
 | Validación Build | Compilación de producción en Next.js completada sin errores (`✓ Compiled successfully`) | ✅ |
 
+### [02/09/2026 — Corrección Estructural Modal Mosaico de Biodiversidad]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Apilamiento Z-Index Modal | Asignado `z-[99999]` en `SpeciesExplorer.tsx` para evitar que el Header sticky se superponga sobre la Ficha Ecológica | ✅ |
+| Posicionamiento e Imagen Nítida | Configurado padding superior (`pt-24 sm:pt-28`) y `max-h-[85vh]` para bajar la tarjeta por debajo de la barra superior y eliminar difuminados | ✅ |
+| Validación de Build | Build de producción Next.js (Turbopack) ejecutado exitosamente con 0 errores (`✓ Compiled successfully in 4.2s`) | ✅ |
+
 ### Estado del Ecosistema
 ```
 Sitio Oficial: https://restauraciontecnoambiental.com

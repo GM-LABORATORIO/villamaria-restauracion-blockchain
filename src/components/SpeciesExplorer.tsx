@@ -192,11 +192,11 @@ export default function SpeciesExplorer() {
       {/* Modal View for Detailed Ecological Impact */}
       {selected && (
         <div
-          className="fixed inset-0 bg-[#020617]/90 backdrop-blur-md z-[9999] flex items-center justify-center p-4"
+          className="fixed inset-0 bg-[#020617]/90 backdrop-blur-md z-[99999] flex items-start sm:items-center justify-center p-4 pt-24 sm:pt-28 overflow-y-auto"
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-[#0b1329] border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl animate-fadeIn text-white my-auto max-h-[90vh] overflow-y-auto"
+            className="bg-[#0b1329] border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl animate-fadeIn text-white my-auto max-h-[85vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Image Header */}
