@@ -241,6 +241,12 @@ Optimizer   : Enabled (200 runs)
 | Posicionamiento e Imagen Nítida | Configurado padding superior (`pt-24 sm:pt-28`) y `max-h-[85vh]` para bajar la tarjeta por debajo de la barra superior y eliminar difuminados | ✅ |
 | Validación de Build | Build de producción Next.js (Turbopack) ejecutado exitosamente con 0 errores (`✓ Compiled successfully in 4.2s`) | ✅ |
 
+### [03/09/2026 — Optimización Responsiva Mobile Viewport & Contención de Texto]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Contención de Viewport Móvil | Aplicado `overflow-x-hidden w-full max-w-full` en `layout.tsx`, `page.tsx` y `nuestra-fauna-y-flora/page.tsx` eliminando el estiramiento horizontal en navegadores de Instagram / WhatsApp / Safari | ✅ |
+| Escalado H1 & Párrafos | Recalibrado título a `text-2xl sm:text-4xl md:text-6xl` con `leading-tight break-words px-2` para visualización completa sin recortes laterales | ✅ |
+
 ### Estado del Ecosistema
 ```
 Sitio Oficial: https://restauraciontecnoambiental.com

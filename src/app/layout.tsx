@@ -91,11 +91,11 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${plusJakartaSans.variable} ${outfit.variable} ${spaceMono.variable} h-full antialiased scroll-smooth`}
+      className={`${plusJakartaSans.variable} ${outfit.variable} ${spaceMono.variable} h-full antialiased scroll-smooth overflow-x-hidden w-full max-w-full`}
     >
-      <body className="min-h-full flex flex-col relative bg-[#060a15] text-[#eef2f9]">
+      <body className="min-h-full flex flex-col relative bg-[#060a15] text-[#eef2f9] overflow-x-hidden w-full max-w-full">
         <MountainAirCanvas />
-        <div className="relative z-10 flex-1 flex flex-col">{children}</div>
+        <div className="relative z-10 flex-1 flex flex-col w-full max-w-full overflow-x-hidden">{children}</div>
       </body>
     </html>
   );
