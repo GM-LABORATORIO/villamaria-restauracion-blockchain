@@ -25,7 +25,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Árbol Noble',
     status: 'Vulnerable',
     image: '/fotos/roble-1.jpg',
-    altText: 'Especécimen adulto de Roble de Montaña (Quercus humboldtii) en bosque altoandino',
+    altText: 'Fotografía real de monitoreo de campo: Roble de Montaña (Quercus humboldtii) en Villamaría',
   },
   {
     name: 'Pino Colombiano',
@@ -36,7 +36,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Árbol Noble',
     status: 'En Peligro',
     image: '/fotos/pino-colombiano-1.jpg',
-    altText: 'Árbol adulto de Pino Colombiano (Retrophyllum rospigliosii) en hábitat nativo',
+    altText: 'Fotografía real de monitoreo de campo: Pino Colombiano (Retrophyllum rospigliosii)',
   },
   {
     name: 'Cedro de Montaña',
@@ -47,7 +47,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Árbol Noble',
     status: 'Vulnerable',
     image: '/fotos/cedro-1.jpg',
-    altText: 'Cedro de Montaña adulto (Cedrela montana) en dosel altoandino',
+    altText: 'Fotografía real de monitoreo de campo: Cedro de Montaña (Cedrela montana)',
   },
   {
     name: 'Encenillo',
@@ -58,7 +58,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Árbol Noble',
     status: 'Preocupación Menor',
     image: '/fotos/encenillo-1.jpg',
-    altText: 'Encenillo adulto (Weinmannia tomentosa) en zona de páramo y niebla',
+    altText: 'Fotografía real de monitoreo de campo: Encenillo (Weinmannia tomentosa)',
   },
   {
     name: 'Siete Cueros',
@@ -69,7 +69,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
     image: '/fotos/siete-cueros-1.jpg',
-    altText: 'Siete Cueros adulto (Tibouchina lepidota) florecido en alta montaña',
+    altText: 'Fotografía real de monitoreo de campo: Siete Cueros (Tibouchina lepidota)',
   },
   {
     name: 'Nigüito',
@@ -80,7 +80,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
     image: '/fotos/niguito-1.jpg',
-    altText: 'Arbusto adulto de Nigüito (Miconia theaezans) con bayas en bosque andino',
+    altText: 'Fotografía real de monitoreo de campo: Nigüito (Miconia theaezans)',
   },
   {
     name: 'Mano de Oso',
@@ -91,7 +91,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
     image: '/fotos/mano-de-oso-1.jpg',
-    altText: 'Mano de Oso adulto (Oreopanax floribundus) con hojarasca frondosa',
+    altText: 'Fotografía real de monitoreo de campo: Mano de Oso (Oreopanax floribundus)',
   },
   {
     name: 'Cucharo',
@@ -102,7 +102,7 @@ const SPECIES_DATA: Species[] = [
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
     image: '/fotos/cucharo-1.jpg',
-    altText: 'Cucharo adulto (Myrsine guianensis) resistente en ladera andina',
+    altText: 'Fotografía real de monitoreo de campo: Cucharo (Myrsine guianensis)',
   },
   {
     name: 'Arboloco',
@@ -112,8 +112,8 @@ const SPECIES_DATA: Species[] = [
     ecoImportance: 'Pionero por excelencia: su rápida cobertura vegetal crea el colchón de sombra necesario para el posterior retorno de los Robles y Cedros.',
     category: 'Arbusto / Pionera',
     status: 'Preocupación Menor',
-    image: '/fotos/arboloco-1.jpg',
-    altText: 'Arboloco adulto (Montanoa quadrangularis) en etapa de regeneración rápida',
+    image: '/fotos/arboloco_oficial_villamaria.jpg',
+    altText: 'Fotografía oficial de monitoreo de campo: Arboloco (Montanoa quadrangularis) en Villamaría',
   },
 ];
 
@@ -192,11 +192,11 @@ export default function SpeciesExplorer() {
       {/* Modal View for Detailed Ecological Impact */}
       {selected && (
         <div
-          className="fixed inset-0 bg-[#020617]/90 backdrop-blur-md z-[9999] flex items-center justify-center p-4"
+          className="fixed inset-0 bg-[#020617]/90 backdrop-blur-md z-[99999] flex items-start sm:items-center justify-center p-4 pt-24 sm:pt-28 overflow-y-auto"
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-[#0b1329] border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl animate-fadeIn text-white my-auto max-h-[90vh] overflow-y-auto"
+            className="bg-[#0b1329] border border-white/10 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl animate-fadeIn text-white my-auto max-h-[85vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Image Header */}

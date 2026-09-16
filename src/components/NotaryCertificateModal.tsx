@@ -195,7 +195,7 @@ export default function NotaryCertificateModal({ isOpen, onClose, doc }: NotaryC
               {/* Header Logos (Alcaldía + Más Progreso side-by-side) */}
               <div className="flex flex-row items-center justify-between gap-4 border-b border-slate-200 pb-6">
                 <div className="flex items-center gap-3">
-                  <img src="/escudo-municipio.png" alt="Escudo Alcaldía de Villamaría" className="h-14 w-auto object-contain" />
+                  <img src="/logos/masprogreso.png" alt="Más Progreso E.S.P." className="h-12 w-auto object-contain" />
                   <div className="h-10 w-px bg-slate-300" />
                   <span className="text-[11px] font-sans font-bold tracking-widest text-slate-800 uppercase">
                     Más Progreso E.S.P.
@@ -282,7 +282,7 @@ export default function NotaryCertificateModal({ isOpen, onClose, doc }: NotaryC
                   </div>
                   <div className="pt-2 border-t border-slate-100">
                     <p className="text-[9px] text-slate-400 italic leading-relaxed">
-                      Consultoría Tecnológica: Servicio de trazabilidad e integridad digital implementado por <a href="https://www.gmholding.info" target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-700 font-semibold transition-colors">GM Holding</a>.
+                      Consultoría Tecnológica: Servicio de trazabilidad e integridad digital implementado por <span className="font-semibold text-slate-800">GM Holding</span>.
                     </p>
                   </div>
                 </div>

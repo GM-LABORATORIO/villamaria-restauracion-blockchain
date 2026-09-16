@@ -178,15 +178,15 @@ export default function LoteMap() {
     }
   };
 
-  // Reset to Vista General
+  // Reset to Vista General (Exact zoom level 15.0 showing all 8 lot spheres and surrounding landscape)
   const fitOverview = () => {
-    if (mapRef.current && fullBoundsRef.current) {
+    if (mapRef.current) {
       // Reset polygon styles
       LOTES.forEach((l) => {
         const p = lotPolygonsRef.current[l.n];
         if (p) p.setStyle({ color: '#34d399', weight: 2, fillOpacity: 0.07 });
       });
-      mapRef.current.fitBounds(fullBoundsRef.current.pad(0.06), { duration: 1 });
+      mapRef.current.flyTo([4.9665, -75.4740], 15.0, { duration: 1 });
     }
   };
 
@@ -260,7 +260,7 @@ export default function LoteMap() {
 
     const fullBounds = allBounds.reduce((a, b) => a.extend(b), allBounds[0]);
     fullBoundsRef.current = fullBounds;
-    map.fitBounds(fullBounds.pad(0.06));
+    map.setView([4.9665, -75.4740], 15.0);
 
     // Fetch tree inventory JSON
     fetch('/inventario_compacto.json')
@@ -478,18 +478,6 @@ export default function LoteMap() {
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Vista General Button */}
-          <button
-            onClick={fitOverview}
-            className="bg-[#020617] border border-emerald-500/40 text-emerald-300 font-mono font-bold text-[11px] px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-sm hover:bg-emerald-950/40 transition-all cursor-pointer"
-          >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="12" r="9" />
-              <circle cx="12" cy="12" r="2.5" />
-            </svg>
-            Vista General
-          </button>
-
           {/* Datum Badge */}
           <div className="bg-[#020617] border border-emerald-500/30 text-emerald-400 font-mono font-bold text-[11px] px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-sm">
             <span className="text-slate-400 font-normal">Datum</span> MAGNA-SIRGAS
@@ -539,11 +527,24 @@ export default function LoteMap() {
 
           <div ref={mapContainerRef} className="w-full h-full" />
 
-          {/* Map Top-Right Badge */}
+          {/* Map Top-Left Badge */}
           <div className="absolute top-4 left-4 z-[500] bg-[#020617]/85 backdrop-blur-md border border-white/10 text-[11px] text-slate-300 font-mono px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-lg">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             <span>{trees.length.toLocaleString('es-CO')} árboles reales georreferenciados</span>
           </div>
+
+          {/* Map Bottom-Right Floating Vista General Button */}
+          <button
+            onClick={fitOverview}
+            className="absolute bottom-4 right-4 z-[500] bg-[#020617]/90 backdrop-blur-md border border-emerald-500/60 hover:border-emerald-400 text-emerald-300 font-mono font-bold text-xs px-4 py-2 rounded-full flex items-center gap-2 shadow-2xl hover:bg-emerald-950/80 transition-all cursor-pointer group"
+            title="Restablecer vista aérea general con todas las esferas de lotes"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="group-hover:scale-110 transition-transform">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="12" r="2.5" />
+            </svg>
+            <span>Vista General</span>
+          </button>
 
           {/* Deforestation Alert Banner */}
           {showDefor && (

@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-transparent text-white selection:bg-emerald-500 selection:text-white flex flex-col relative">
+    <div className="min-h-screen bg-transparent text-white selection:bg-emerald-500 selection:text-white flex flex-col relative w-full max-w-full overflow-x-hidden">
       <Header />
 
       {/* Floating Side Modular Section Navigation */}
@@ -23,17 +23,17 @@ export default function Home() {
       {/* Background radial glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[700px] bg-gradient-to-b from-emerald-950/20 via-blue-950/15 to-transparent pointer-events-none blur-3xl z-0" />
 
-      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20 flex-1">
+      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-16 sm:space-y-20 flex-1 w-full max-w-full overflow-x-hidden">
         
         {/* Hero Section (Inspirado en el Nevado del Ruiz / Cumanday) */}
-        <section id="inicio" className="text-center max-w-4xl mx-auto space-y-6 pt-6 scroll-mt-24">
+        <section id="inicio" className="text-center max-w-4xl mx-auto space-y-6 pt-4 sm:pt-6 scroll-mt-24 w-full">
 
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent font-heading">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent font-heading leading-tight break-words px-2">
             Seguridad Hídrica &amp; Restauración Ecológica
           </h1>
           
-          <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto font-sans">
+          <p className="text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto font-sans px-2">
             Protección de la Cuenca Quebrada Chupaderos que nace en las nacientes andinas del <strong className="text-white">Nevado del Ruiz (Cumanday)</strong> a través de la reforestación activa en <strong className="text-white">Caldas</strong>
           </p>
 

@@ -8,24 +8,24 @@ import SectionSideNav from '@/components/SectionSideNav';
 
 export default function NuestraFaunaYFlora() {
   return (
-    <div className="min-h-screen bg-transparent text-white flex flex-col relative selection:bg-emerald-500 selection:text-white">
+    <div className="min-h-screen bg-transparent text-white flex flex-col relative selection:bg-emerald-500 selection:text-white w-full max-w-full overflow-x-hidden">
       <Header />
       <SectionSideNav />
 
-      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 space-y-12 relative z-10">
+      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12 relative z-10 overflow-x-hidden">
         
         {/* Radial Glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[300px] bg-gradient-to-b from-emerald-950/20 via-blue-950/10 to-transparent pointer-events-none blur-3xl z-0" />
 
         {/* Section 1: Hero Narrative */}
-        <div className="space-y-4 text-center max-w-3xl mx-auto relative z-10 pt-4">
+        <div className="space-y-4 text-center max-w-3xl mx-auto relative z-10 pt-4 w-full">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-emerald-950/50 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-semibold rounded-full uppercase tracking-wider backdrop-blur-md shadow-lg shadow-emerald-950/40">
             Mosaico de Biodiversidad &amp; Conservación Altoandina
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent font-heading">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-emerald-400 bg-clip-text text-transparent font-heading leading-tight break-words px-2">
             Más que árboles, un ecosistema vivo
           </h1>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-sans">
+          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-sans px-2">
             La restauración ecológica de la cuenca Quebrada Chupaderos es un esfuerzo integral para reconstruir la red de vida del bosque de niebla y páramo en Villamaría, Caldas.
           </p>
         </div>
