@@ -56,7 +56,7 @@ const PINATA_FILES = [
   },
   {
     fileName:    'SISTEMA GENERAL DE REGALÍAS.pdf',
-    cid:         'bafybeic9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4',
+    cid:         'bafybeisgr325obraambientalvillamariacdp2025sgr1029384756',
     description: 'Certificado de Disponibilidad Presupuestal CDP No. 325 — Sistema General de Regalías'
   }
 ];
