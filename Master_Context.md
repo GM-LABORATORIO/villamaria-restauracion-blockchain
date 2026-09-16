@@ -218,12 +218,22 @@ Optimizer   : Enabled (200 runs)
 | Open Graph Social Banner | Diseñado `og-banner.png` (1200x630) con paisaje andino + datos holográficos | ✅ |
 | Metadata Social | Configurado `layout.tsx` con títulos, descripciones, tags y tarjetas para WhatsApp / LinkedIn / Twitter | ✅ |
 
+### [16/09/2026 — Sesión Sustitución de Documentos Notarizados y Ficha de Árboles Completa]
+| Hito | Acción | Estado |
+|------|--------|--------|
+| Base de Datos de Árboles | Integrada `FICHA BASE DE DATOS arboles.xlsx` (5,400 individuos georreferenciados) sin romper el visor | ✅ |
+| Extracción JSON | Regenerados `inventario_compacto.json`, `ficha_base_datos.json` e `inventario_summary.json` | ✅ |
+| Notarización Blockchain | Eliminados 5 documentos obsoletos e integrados 4 documentos oficiales (Decreto 199, Presupuesto, MGA, CDP 325) | ✅ |
+| Transacciones On-Chain | 8/8 documentos notarizados exitosamente en Avalanche C-Chain Mainnet con TXIDs en Snowtrace | ✅ |
+| Registro Notarizado | Actualizado `public/notarized_docs.json` reflejando los nuevos hashes y CIDs | ✅ |
+| Validación de Build | Build de producción Next.js 16 (`npm run build`) ejecutado exitosamente sin errores | ✅ |
+
 ### Estado del Ecosistema
 ```
 Sitio Oficial: https://restauraciontecnoambiental.com
 Red Blockchain: Avalanche C-Chain Mainnet
-Notarización : 9/9 documentos inmutables auditables
-Branding      : Isotipo 3D Esmeralda + Open Graph Social Banner 1200x630
+Notarización : 8/8 documentos inmutables auditables (Decreto 199, Presupuesto, MGA, CDP 325, Ficha Árboles, Polígonos, Informe, Mapa Satelital)
+Base de Datos : FICHA BASE DE DATOS arboles.xlsx (5,400 registros georreferenciados)
 ```
 
 

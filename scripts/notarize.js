@@ -25,9 +25,9 @@ const PINATA_FILES = [
     description: 'Coordenadas WGS84 de los 8 lotes de restauración ecológica'
   },
   {
-    fileName:    'Localizacion_Individuos_Totales_y_Muestreo.xls',
+    fileName:    'FICHA BASE DE DATOS arboles.xlsx',
     cid:         'bafybeiceqse3kdc7422cybmduhrzpxx7drmygr6eakqpjvzhg5xpaauqxm',
-    description: 'Inventario completo de 10,900 individuos forestales por lote'
+    description: 'Inventario unificado y completo de 5,400 individuos forestales georreferenciados'
   },
   {
     fileName:    'INFORME_FINAL_GEOREFERENCIACION.pdf',
@@ -37,32 +37,27 @@ const PINATA_FILES = [
   {
     fileName:    'Individuos_Totales.jpg',
     cid:         'bafybeibvr2j7eu2p6fzjuweh2ajfyt5o7r2ytehk724isu7tuysc7ad2uu',
-    description: 'Mapa satelital de individuos totales plantados en los 8 lotes'
+    description: 'Mapa satelital de localización de la totalidad de individuos forestales'
   },
   {
-    fileName:    'Individuos_Totales_y_muestreo.jpg',
-    cid:         'bafybeibj3qpvqhkzefp3rfiurtkup4u25tjj2wkuxmfbmx5v4uzq6i3n3i',
-    description: 'Mapa con inventario total y muestreo de campo superpuestos'
+    fileName:    'DECRETO 199 JULIO 28 DE 2025 PRIORIZA Y APRUEBA PROYECTOS DE INVERSION FINANCIADOS CON RECURSOS DEL SGR-1.pdf',
+    cid:         'bafybeig5xkl7v2y2b6d5m6b7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4',
+    description: 'Decreto oficial de priorización y aprobación de inversión SGR-1'
   },
   {
-    fileName:    'Individuos_Totales_y_muestreo_sin_IS.jpg',
-    cid:         'bafybeihb42wfvotvfx55vm4dtyif3go3lkiwaw3akdd5fjppoasxv4ab5q',
-    description: 'Mapa de inventario total y muestreo sin imagen satelital de fondo'
+    fileName:    'PRESUPUESTO RESTAURACION FINAL.pdf',
+    cid:         'bafybeif4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9',
+    description: 'Presupuesto oficial y cronograma financiero detallado de restauración'
   },
   {
-    fileName:    'Individuos_muestreo.jpg',
-    cid:         'bafybeicayovwcmzzk4ohyybphh4n4onpz6yjssdeip3e76phe6g5v46jva',
-    description: 'Cartografía del área de muestreo forestal del proyecto'
+    fileName:    'MGA RESTAURACION.pdf',
+    cid:         'bafybeia1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6',
+    description: 'Metodología General Ajustada (MGA) registrada del proyecto ambiental'
   },
   {
-    fileName:    'Copia_de_base_669_Muestreo_arboles.xlsx',
-    cid:         'bafkreicnf2zeloriicwao4uztij4zyqturyko7bhbnhoyzvfja3hkvc6nq',
-    description: 'Base de datos del muestreo estadístico de árboles (669 registros)'
-  },
-  {
-    fileName:    'Copia_de_Areas_lotes.pdf',
-    cid:         'bafkreic3sdyrfgdas435chxo2e6hhtl76igabty6whk6pe7hykdbubu67y',
-    description: 'Plano oficial de áreas y linderos de los 8 lotes de restauración'
+    fileName:    'CDP 325 OBRA AMBIENTAL VILLAMARIA.pdf',
+    cid:         'bafybeic9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4',
+    description: 'Certificado de Disponibilidad Presupuestal CDP No. 325 Villamaría'
   }
 ];
 

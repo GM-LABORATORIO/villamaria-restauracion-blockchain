@@ -3,95 +3,118 @@
   "speciesDistribution": [
     {
       "name": "Roble",
-      "count": 1840
+      "count": 1840,
+      "categoria": "Árboles Nobles"
     },
     {
       "name": "Cedro",
-      "count": 1150
+      "count": 1150,
+      "categoria": "Árboles Nobles"
     },
     {
       "name": "Amargoso",
-      "count": 829
+      "count": 829,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Fresno",
-      "count": 771
+      "count": 771,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Garrocho",
-      "count": 173
+      "count": 173,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Cucharo",
-      "count": 158
+      "count": 158,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Yopo",
-      "count": 99
+      "count": 99,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Casco de buey",
-      "count": 93
+      "count": 93,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Acacia",
-      "count": 82
+      "count": 82,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Guayacan",
-      "count": 56
+      "count": 56,
+      "categoria": "Árboles Nobles"
     },
     {
       "name": "Mano de oso",
-      "count": 30
+      "count": 30,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Arboloco",
-      "count": 25
+      "count": 25,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Churibio",
-      "count": 24
+      "count": 24,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Quiebra barrigo",
-      "count": 19
+      "count": 19,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Olivo",
-      "count": 17
+      "count": 17,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Carbonero",
-      "count": 15
+      "count": 15,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Nacedero",
-      "count": 10
+      "count": 10,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Gaque",
-      "count": 2
+      "count": 2,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Eugenia",
-      "count": 2
+      "count": 2,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Chilca",
-      "count": 2
+      "count": 2,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Camargo",
-      "count": 1
+      "count": 1,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Buey",
-      "count": 1
+      "count": 1,
+      "categoria": "Arbustos / Polinizadores"
     },
     {
       "name": "Amargoso,",
-      "count": 1
+      "count": 1,
+      "categoria": "Arbustos / Polinizadores"
     }
   ],
   "lotes": {

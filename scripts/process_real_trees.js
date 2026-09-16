@@ -6,13 +6,18 @@ const proj4 = require('proj4');
 // MAGNA-SIRGAS Origen Nacional (EPSG:9377) -> WGS84 (EPSG:4326)
 proj4.defs('EPSG:9377', '+proj=tmerc +lat_0=4 +lon_0=-73 +k=0.9992 +x_0=5000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs');
 
-const fichaBDPath = path.join(__dirname, '..', 'proyecto V2', 'FICHA BASE DE DATOS.xlsx');
+let fichaBDPath = path.join(__dirname, '..', 'data', 'FICHA BASE DE DATOS arboles.xlsx');
+if (!fs.existsSync(fichaBDPath)) {
+  fichaBDPath = path.join(__dirname, '..', 'proyecto V2', 'FICHA BASE DE DATOS.xlsx');
+}
 
-console.log('Processing FICHA BASE DE DATOS.xlsx as Single Source of Truth...');
+console.log('Processing Excel from path:', fichaBDPath);
 const wbFicha = XLSX.readFile(fichaBDPath);
 
 let compactData = [];
 let fichaTrees = [];
+const speciesCounts = {};
+const loteIntervencionCounts = {};
 
 wbFicha.SheetNames.forEach((sheetName) => {
   const sheet = wbFicha.Sheets[sheetName];
@@ -66,17 +71,32 @@ wbFicha.SheetNames.forEach((sheetName) => {
       lat,
       lng
     });
+
+    if (especie) {
+      speciesCounts[especie] = (speciesCounts[especie] || 0) + 1;
+    }
+    const loteKey = String(lote);
+    if (!loteIntervencionCounts[loteKey]) {
+      loteIntervencionCounts[loteKey] = { siembra: 0, mantenimiento: 0, total: 0 };
+    }
+    loteIntervencionCounts[loteKey].total++;
+    const intervUpper = intervencion.toUpperCase();
+    if (intervUpper.includes('SIEMBRA') || intervUpper === 'S') {
+      loteIntervencionCounts[loteKey].siembra++;
+    } else {
+      loteIntervencionCounts[loteKey].mantenimiento++;
+    }
   }
 });
 
-console.log(`Successfully parsed ${compactData.length} records from FICHA BASE DE DATOS.xlsx`);
+console.log(`Successfully parsed ${compactData.length} records from Excel`);
 
-// Write public/inventario_compacto.json (100% synchronized with FICHA BASE DE DATOS.xlsx)
+// Write public/inventario_compacto.json
 fs.writeFileSync(
   path.join(__dirname, '..', 'public', 'inventario_compacto.json'),
   JSON.stringify(compactData)
 );
-console.log('Saved public/inventario_compacto.json (No missing altura/dap, 100% synchronized)');
+console.log('Saved public/inventario_compacto.json');
 
 // Write public/ficha_base_datos.json
 fs.writeFileSync(
@@ -84,3 +104,22 @@ fs.writeFileSync(
   JSON.stringify(fichaTrees)
 );
 console.log('Saved public/ficha_base_datos.json');
+
+// Write public/inventario_summary.json
+const nobleSpeciesList = ['ROBLE', 'CEDRO', 'PINO COLOMBIANO', 'CEDRO NEGRO', 'GUAYACAN', 'NOGAL', 'SAUCE', 'ALISO', 'ARRAYAN'];
+const sortedSpecies = Object.entries(speciesCounts).sort((a, b) => b[1] - a[1]);
+const summaryMeta = {
+  totalIndividuos: compactData.length,
+  speciesDistribution: sortedSpecies.map(([name, count]) => ({
+    name: name.charAt(0) + name.slice(1).toLowerCase(),
+    count,
+    categoria: nobleSpeciesList.some(n => name.includes(n)) ? 'Árboles Nobles' : 'Arbustos / Polinizadores'
+  })),
+  lotes: loteIntervencionCounts
+};
+
+fs.writeFileSync(
+  path.join(__dirname, '..', 'public', 'inventario_summary.json'),
+  JSON.stringify(summaryMeta, null, 2)
+);
+console.log('Saved public/inventario_summary.json');
