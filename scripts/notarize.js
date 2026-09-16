@@ -55,9 +55,9 @@ const PINATA_FILES = [
     description: 'Metodología General Ajustada (MGA) registrada del proyecto ambiental'
   },
   {
-    fileName:    'CDP 325 OBRA AMBIENTAL VILLAMARIA.pdf',
+    fileName:    'SISTEMA GENERAL DE REGALÍAS.pdf',
     cid:         'bafybeic9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4',
-    description: 'Certificado de Disponibilidad Presupuestal CDP No. 325 Villamaría'
+    description: 'Certificado de Disponibilidad Presupuestal CDP No. 325 — Sistema General de Regalías'
   }
 ];
 
