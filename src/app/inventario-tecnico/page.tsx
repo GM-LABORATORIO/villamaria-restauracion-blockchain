@@ -163,11 +163,11 @@ export default function InventarioTecnico() {
                 <strong className="text-slate-300">{data.length.toLocaleString('es-CO')}</strong> individuos
               </p>
               <a
-                href="/data/FICHA_BASE_DE_DATOS.xlsx"
-                download
+                href="/FICHA_BASE_DE_DATOS.xlsx"
+                download="FICHA BASE DE DATOS arboles.xlsx"
                 className="text-emerald-400 hover:underline flex items-center gap-1.5 font-semibold"
               >
-                📥 Descargar Excel Completo (FICHA BASE DE DATOS.xlsx)
+                📥 Descargar Excel Completo (FICHA BASE DE DATOS arboles.xlsx)
               </a>
             </div>
 

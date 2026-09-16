@@ -33,12 +33,9 @@ export default function BlockchainVerifier() {
   }>({ status: 'idle', message: '' });
 
   const getIPFSViewLink = (doc: NotarizedDoc) => {
-    if (!doc.cid) return '#';
-    const isViewable = doc.fileName.endsWith('.pdf') || doc.fileName.match(/\.(jpg|jpeg|png)$/i);
-    if (isViewable) {
-      return `https://ipfs.io/ipfs/${doc.cid}`;
-    }
-    return doc.publicLink;
+    if (!doc.fileName) return doc.publicLink || '#';
+    // Link directly to local static served doc in /docs/ for 100% reliable view & download
+    return `/docs/${encodeURIComponent(doc.fileName)}`;
   };
 
   useEffect(() => {
